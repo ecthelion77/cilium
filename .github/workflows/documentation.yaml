@@ -70,7 +70,7 @@ jobs:
         uses: ./.github/actions/disk-cleanup
 
       - name: Build HTML
-        uses: docker://quay.io/cilium/docs-builder:d9d83a9bff0a0679f96bf3c8f242b2041391c6af@sha256:614103d1a8e778993d592665caaad8b132b313832ca8282b7618d064842e3929
+        uses: docker://quay.io/cilium/docs-builder:a7ca6b421a672be2bc3fcdca00e64486fc55fcd7@sha256:2fc5d6b5ca6e7386403a06e187f11d7b177cb9da5c50965a74c7e8c2552a5f39
         with:
           entrypoint: ./Documentation/check-build.sh
           args: html
